@@ -59,50 +59,33 @@ function tabs(headerSelector, tabSelector, contentSelector, activeClass, display
         }
     })
 }
-
-// ПЕРВЫЙ аргумент - класс всего нашего хедера табов.
-// ВТОРОЙ аргумент - класс конкретного элемента, при клике на который будет переключатся таб.
-// ТРЕТИЙ аргумент - класс того блока, который будет переключаться.
-// ЧЕТВЕРТЫЙ аргумент - класс активности, который будет добавлятся для таба, который сейчас активен.
 tabs('.tabs__header', '.tabs__header-item', '.tabs__content-item', 'active')
 
 //Skroll
 function toSkroll() {
-    const links = document.querySelector('.menu')
-    const header = document.querySelector('header')
-    console.log(links)
+    const links = document.querySelector('.menu');
+    const header = document.querySelector('header');
+    const about = document.querySelector('.section__about');
+    const service = document.querySelector('.section__scope');
+    const work = document.querySelector('.section__portfolio');
+    const burger = document.querySelector('.burger')
+    const menu = document.querySelector('.menu')
+    const body = document.querySelector('body')
     links.addEventListener('click', e => {
         const target = e.target;
         switch (target.name) {
-            case 'home': window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            })
+            case 'home': header.scrollIntoView({ block: "start", behavior: "smooth" });
                 break;
-            case 'about': window.scrollTo({
-                top: 605,
-                behavior: "smooth"
-            })
+            case 'about': about.scrollIntoView({ block: "start", behavior: "smooth" });
                 break;
-            case 'service': window.scrollTo({
-                top: 1255,
-                behavior: "smooth"
-            })
+            case 'service': service.scrollIntoView({ block: "start", behavior: "smooth" });
                 break;
-            case 'work': window.scrollTo({
-                top: 1655,
-                behavior: "smooth"
-            })
+            case 'work': work.scrollIntoView({ block: "start", behavior: "smooth" });
                 break;
         }
-        console.log(target.name);
+        menu.classList.remove('active')
+        burger.classList.remove('active-burger')
+        body.classList.remove('locked')
     })
 }
-
-
-
-
-
-
-
 toSkroll()
