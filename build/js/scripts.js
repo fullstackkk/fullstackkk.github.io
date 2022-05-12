@@ -114,3 +114,4 @@ function bindModal(trigger, modal, close) {
     })
 }
 bindModal('.btn__hero', '.modal__wrapper', '.modal__close')
+bindModal('.btn__offer', '.modal__wrapper', '.modal__close')

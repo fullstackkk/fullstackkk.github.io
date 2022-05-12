@@ -2,11 +2,12 @@
 // mf
 .modal__wrapper {
     position: fixed;
+    overflow: hidden;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     justify-content: center;
     align-items: center;
     z-index: 100;
@@ -15,7 +16,7 @@
     .modal {
         background: $primary;
         padding: 25px;
-        border-radius: 5px;
+        border-radius: 20px;
         height: 350px;
         width: 400px;
 

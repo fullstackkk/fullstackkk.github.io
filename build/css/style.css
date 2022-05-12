@@ -187,31 +187,21 @@ button {
   text-align: center;
 }
 
-.locked {
-  position: fixed;
-  background: #131418;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  pointer-events: all;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  z-index: 22;
-  -webkit-animation: fade 0.1s linear;
-          animation: fade 0.1s linear;
-}
+/* .locked{
+    position: fixed;
+    background: #131418;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    pointer-events: all;
+    justify-content: center;
+    align-items: center;
+    z-index: 22;
+    animation: fade 0.1s linear;        
+} */
 
 header {
   overflow: hidden;
@@ -711,11 +701,12 @@ nav {
 
 .modal__wrapper {
   position: fixed;
+  overflow: hidden;
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.8);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -729,7 +720,7 @@ nav {
 .modal__wrapper .modal {
   background: #0FBF61;
   padding: 25px;
-  border-radius: 5px;
+  border-radius: 20px;
   height: 350px;
   width: 400px;
 }
@@ -877,6 +868,10 @@ nav {
 @media (max-width: 767.98px) {
   .container {
     max-width: 740px;
+  }
+
+  .offer {
+    bottom: 250px;
   }
 }
 
