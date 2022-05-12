@@ -1,0 +1,86 @@
+.section {
+    // .section__scope
+    &__scope {
+        padding-top: 134px;
+    }
+}
+.scope {
+    // .scope__wrapper
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+    // .scope__directions
+    &__directions {
+        padding-top: 92px;
+        display: grid; 
+        grid-template-columns: 1fr 1.1fr 0.9fr; 
+        grid-template-rows: 1fr; 
+        gap: 10px 0px; 
+        grid-template-areas: 
+            ". . ."; 
+            @media screen and (max-width: $breakpoint992){
+                display: flex;
+                flex-direction:column;
+                align-items: start; 
+                gap: 60px;
+                padding-left: 20%;
+            }
+    }
+    // .scope__directions-item
+    &__directions-item {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 30px;
+        // .scope__directions-item__img
+        &__img{
+            width: 120px;
+            height: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            transition: 0.5s all ease;
+            // .scope__directions-item__img__green
+            &__green{                
+                background: rgba(15, 191, 97, 0.2);
+                &:hover{
+                    background: rgba(2, 78, 38, 0.2);
+                }
+            }
+            // .scope__directions-item__img__pr
+            &__pr{
+                background: rgba(45, 76, 255, 0.13);
+                &:hover{
+                    background: rgba(76, 0, 255, 0.13);
+                }
+            }
+            // .scope__directions-item__img__lgreen
+            &__lgreen{
+                background: rgba(15, 191, 97, 0.05);
+                &:hover{
+                    background: rgba(15, 115, 62, 0.2);
+                }
+            }
+        }        
+        // .scope__directions-item__num
+        &__num{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #494949;
+        }
+        // .scope__directions-item__skill
+        &__skill{
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #000000;
+            @media screen and (max-width: $breakpoint480){
+            font-size: 14px;
+            }
+        }
+    }
+}
