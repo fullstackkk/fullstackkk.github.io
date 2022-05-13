@@ -586,10 +586,22 @@ nav {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 30px;
+  width: 100%;
 }
 
-.tabs__content-item img {
+.tabs__content-item .link {
+  width: 45%;
+}
+
+.tabs__content-item .link img {
+  border-radius: 20px;
   width: 100%;
+}
+
+.tabs__content-item .link img:hover {
+  /* border: 5px $primary solid; */
+  -webkit-box-shadow: 1px 1px 25px 9px #0FBF61;
+          box-shadow: 1px 1px 25px 9px #0FBF61;
 }
 
 .footer {

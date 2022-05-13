@@ -38,8 +38,17 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
-            img{
-                width: 100%;
+            width: 100%;
+            .link{
+                width: 45%;
+                img{
+                    border-radius: 20px;
+                    width: 100%;
+                    &:hover{
+                        /* border: 5px $primary solid; */
+                        box-shadow: 1px 1px 25px 9px $primary;
+                    }    
+                }                           
             }
             @media screen and (max-width: $breakpoint480){
                 max-width: 300px;
