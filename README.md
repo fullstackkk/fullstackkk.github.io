@@ -10,21 +10,9 @@
 
 - ## Single Page Sites
 
-  - https://fullstackkk.github.io/build/kitchen
-  - https://fullstackkk.github.io/build/Pulse
-  -
-  -
-  -
-  -
-  -
-  -
-  -
+  - https://github.com/fullstackkk/kitchen
+  - https://github.com/fullstackkk/Pulse
 
 - ## React apps
   - https://github.com/fullstackkk/CRM-react-bootstrap
   - https://github.com/fullstackkk/Marvel-Guid
-  -
-  -
-  -
-  -
-  -
