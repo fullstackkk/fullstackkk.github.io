@@ -4,12 +4,16 @@
     height: 300px;
     position: absolute;
     width: 100%;
+    position: relative;
+    z-index: 10;
     // .footer__wrapper
     &__wrapper {
+        position: relative;
         padding-top: 200px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        z-index: inherit;
         @media screen and (max-width: $breakpoint992){
             padding-top: 150px;
             flex-direction: column;
@@ -37,7 +41,8 @@
     bottom: 200px;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;    
+    gap: 50px; 
+    z-index: 20;   
     @media screen and (max-width: $breakpoint992){
         padding: 20px;
         flex-direction: column;
